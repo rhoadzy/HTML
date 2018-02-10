@@ -1,0 +1,26 @@
+p {
+	/*Content - width and height*/
+	/*can use px or % p width 50% of parent element - body*/
+width: 50%;
+
+/*Boarder*/
+
+border: 2px solid blue;
+
+/*Padding = space between element and boarder inside box*/
+/*padding set all 4 sides as exactly the same*/
+/*padding: 10px;*/
+padding-left: 40px;
+/*Margin* space betwen elements padding for the outside*/
+/*margin: 100px;*/
+/*margin-top: 500px;*/
+/*can do each top right left bottom margins individual or just one line code*/
+/*margin: 20px 40px 500px 100px;*/
+/*can do top bottom 0 and left right auto this way*/
+/*margin: 0 auto 0 auto;*/
+/*or top bottom 0 and left right auto easier way*/
+/*margin: 0 auto;*/
+margin: 50px 20px;
+
+}
+

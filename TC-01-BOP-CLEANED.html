@@ -1,0 +1,7460 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://uat-coic.iscs.com/" />
+<title>tc 47 BOP</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tc 47 BOP</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=NewQuote</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<!--Product Selection-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BasicPolicy.EffectiveDt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=BasicPolicy.EffectiveDt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=BasicPolicy.EffectiveDt</td>
+	<td>011518</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BasicPolicy.ControllingStateCd</td>
+	<td>label=New Hampshire</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Business Owners</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Business Owners</td>
+	<td></td>
+</tr>
+<!--Prequalification Questions-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=HasRisk_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=HasRisk_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Continue</td>
+	<td></td>
+</tr>
+<!--Policy-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BasicPolicy.PreviousCarrierCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BasicPolicy.PreviousCarrierCd</td>
+	<td>label=Co-operative</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Insured.EntityTypeCd</td>
+	<td>label=Corporation</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=InsuredName.CommercialName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InsuredName.CommercialName</td>
+	<td>DOCTOR EVIL</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InsuredMailingAddr.Addr1</td>
+	<td>1 MAIN ST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InsuredMailingAddr.City</td>
+	<td>BERLIN</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=InsuredMailingAddr.StateProvCd</td>
+	<td>label=New Hampshire</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=InsuredMailingAddr.addrVerifyImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=InsuredMailingAddr.verifyStatusImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Insured.ContactPerson</td>
+	<td>X</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=InsuredPhonePrimary.PhoneName</td>
+	<td>label=Mobile</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=InsuredPhonePrimary.PhoneNumber</td>
+	<td>1111111111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<!--Location-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input[id*='QuoteCustomerClearingRef']:last</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[id*='QuoteCustomerClearingRef']:last</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToHydrant</td>
+	<td>label=1,000 Feet or Under</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToFireStation</td>
+	<td>label=5 Miles or Under</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GetTerritories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=select[id='BOPLocationDetail.TownCd']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BOPLocationDetail.ProtectionClassCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<!--Property Line-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<!--Property-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Service</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=71332 - Barber Shops</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.SqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.SqFt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.NumOfStories</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.YearBuilt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Owner-Occupant</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.BuildingLimit</td>
+	<td>350000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.ContentsLimit</td>
+	<td>150000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BuildingBlanketRiskGroupRef</td>
+	<td>label=2 - Blanket Building</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ContentsBlanketRiskGroupRef</td>
+	<td>label=3 - Blanket Business Personal Property</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.FireExtinguisher</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.CarbonMonoxideDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.SmokeDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Bind</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Bind</td>
+	<td></td>
+</tr>
+<!--Underwriting-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_ConstructionRenovation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ConstructionRenovation</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CancelNonRenewed</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Foreclosure</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Losses</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_UndergroundTanks</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_OtherBusiness</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_InsuranceWithCoop</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_AthleticTeams</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Chemicals</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SexualAbuse</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_BoatsWatercraft</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_RecreationalFacilities</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Employees</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LapseInsurance</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_BuyingSellingProperties</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_OtherEntity</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SafetyProgram</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ForeignOperations</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_HazardousSubstances</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ManufacturingProducts</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SpecialEquipment</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PropaneTank</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_AutoService</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_EmployeeAuto</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SupplementalHeat</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NoYearsInBusiness</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<!--Fix errors.....-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Fix...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fix...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.OccupiedPct</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.OccupiedPct</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.Condition</td>
+	<td>label=Average</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.AnnualRent</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<!--Fix errors.....-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=fix...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=fix...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BasicPolicy.PayPlanCd_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=BasicPolicy.PayPlanCd_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Wizard_Risks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Wizard_Risks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CopyRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CopyRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<!--Property-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Office</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=65721 - Veterinarian's Office</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.Occupancy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.Occupancy</td>
+	<td>label=Service</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<!--Location 1-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Mercantile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=59974 - Hearing Aid Stores</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_Deliveries</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Deliveries</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ProductManufactured</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_EffectiveDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<!--Location 2-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location.LocationDesc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Location.LocationDesc</td>
+	<td>Location 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.PrimaryNumber</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.StreetName</td>
+	<td>main </td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.Suffix</td>
+	<td>label=St</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.City</td>
+	<td>berlin</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.StateProvCd</td>
+	<td>label=New Hampshire</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LocationLookupAddr.addrVerifyImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=LocationLookupAddr.verifyStatusImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToHydrant</td>
+	<td>label=Over 1,000 Feet</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToFireStation</td>
+	<td>label=Over 5 Miles</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GetTerritories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=select[id='BOPLocationDetail.TownCd']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BOPLocationDetail.ProtectionClassCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location2_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Location2_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Apartment</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=65142 - Apartment Buildings - 4 Families or Fewer, with Mercantile or Office Occupancy</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.SqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.SqFt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.NumOfStories</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.YearBuilt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ConstructionCd</td>
+	<td>label=Joisted Masonry</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Lessor</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.OccupiedPct</td>
+	<td>75</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.Condition</td>
+	<td>label=Average</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.AnnualRent</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.BuildingLimit</td>
+	<td>350000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.MSBCEReplacementCost</td>
+	<td>150000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BuildingBlanketRiskGroupRef</td>
+	<td>label=2 - Blanket Building</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.ContentsLimit</td>
+	<td>150000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ContentsBlanketRiskGroupRef</td>
+	<td>label=3 - Blanket Business Personal Property</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.FireExtinguisher</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.SmokeDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.CarbonMonoxideDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SmokeAlarm</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CarbonMonoxide</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_FireExtinguisher</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Exits</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_TenantsDog</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumberOfApartments</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LeadPaint</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Mercantile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=60989 - Condominiums Associations - Other Than Office or Residential (Association Risk Only) - with no Restaurants</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.CarbonMonoxideDetectorBattery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Deliveries</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ProductManufactured</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Copy Risk')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Apartment</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=69145 - Condominiums Associations - Residential (Association Risk Only)</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.CarbonMonoxideDetectorBattery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.CarbonMonoxideDetectorBattery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SmokeAlarm</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CarbonMonoxide</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_FireExtinguisher</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Exits</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_TenantsDog</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumberOfApartments</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Condominium</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#Question_NumberOfApartments_Row &gt; td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>26000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<!-- Recorder maybe got click happy right here.-->
+<!-- This all doesn't look right or mesh with a normal flow-->
+<!-- Looks like they delete and re-add this coverage after this mess -->
+<!-- Commenting this whole coverage in place of the new entry they did -->
+<!-- Here as well, they're basically re-entering the same values as above.  Can't be right
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<!-- 
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_PowerSupply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=CoverageList_UTLTE_Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Delete Coverage?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<!--Location 3-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location.LocationDesc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Location.LocationDesc</td>
+	<td>Location 3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.PrimaryNumber</td>
+	<td>5 </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.StreetName</td>
+	<td>main</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.Suffix</td>
+	<td>label=St</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.City</td>
+	<td>berlin</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.StateProvCd</td>
+	<td>label=New Hampshire</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LocationLookupAddr.addrVerifyImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=LocationLookupAddr.verifyStatusImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToHydrant</td>
+	<td>label=1,000 Feet or Under</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToFireStation</td>
+	<td>label=Over 5 Miles</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GetTerritories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=select[id='BOPLocationDetail.TownCd']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BOPLocationDetail.ProtectionClassCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location3_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Location3_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Service</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Mercantile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=69146 - Motels, Hotels and Bed and Breakfasts</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.SqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.SqFt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.NumOfStories</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.YearBuilt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ConstructionCd</td>
+	<td>label=Masonry Non-Combustible</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Owner-Occupant</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.OccupiedPct</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.Condition</td>
+	<td>label=Average</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.AnnualRent</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.BuildingLimit</td>
+	<td>350000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.ContentsLimit</td>
+	<td>150000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BuildingBlanketRiskGroupRef</td>
+	<td>label=2 - Blanket Building</td>
+</tr>
+<!--No need for this css value click when we already used the label for the above select
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;RiskGroup-1393696532-861127021&quot;]</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Building.ContentsBlanketRiskGroupRef</td>
+	<td>label=3 - Blanket Business Personal Property</td>
+</tr>
+<!--No need for this css value click when we already used the label for the above select
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;RiskGroup-136747900-2145333310&quot;]</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Building.FireExtinguisher</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.SmokeDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.CarbonMonoxideDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Deliveries</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LeadPaint</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ProductManufactured</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.OccupancyCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Lessor</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SPOIL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SPOIL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>32000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.RefrigerationMaintenanceInd</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_PerishableStock</td>
+	<td>food</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_OccClass</td>
+	<td>label=Class 3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CoverageType</td>
+	<td>label=Both 1 &amp; 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Return</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Return</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Risk_7_Change</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Risk_7_Change</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=NewLocation</td>
+	<td></td>
+</tr>
+<!--Location 4-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location.LocationDesc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Location.LocationDesc</td>
+	<td>Location 4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.PrimaryNumber</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.StreetName</td>
+	<td>main</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.Suffix</td>
+	<td>label=St</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=LocationLookupAddr.City</td>
+	<td>berlin</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=LocationLookupAddr.StateProvCd</td>
+	<td>label=New Hampshire</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LocationLookupAddr.addrVerifyImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=LocationLookupAddr.verifyStatusImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=CombinedAddrButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToHydrant</td>
+	<td>label=1,000 Feet or Under</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=BOPLocationDetail.DistanceToFireStation</td>
+	<td>label=5 Miles or Under</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GetTerritories</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=select[id='BOPLocationDetail.TownCd']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BOPLocationDetail.ProtectionClassCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Location4_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Location4_AddRisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Restaurant</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=54996 - Restaurants - Family Style</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.SqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.SqFt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.NumOfStories</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.YearBuilt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ConstructionCd</td>
+	<td>label=Masonry Non-Combustible</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Tenant</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.OccupiedPct</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.Condition</td>
+	<td>label=Average</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.AnnualRent</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.BuildingLimit</td>
+	<td>350000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Building.ContentsLimit</td>
+	<td>150000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BuildingBlanketRiskGroupRef</td>
+	<td>label=2 - Blanket Building</td>
+</tr>
+<!--No need for this css value click when we already used the label for the above select
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;RiskGroup-1393696532-861127021&quot;]</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Building.ContentsBlanketRiskGroupRef</td>
+	<td>label=3 - Blanket Business Personal Property</td>
+</tr>
+<!--No need for this css value click when we already used the label for the above select
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;RiskGroup-136747900-2145333310&quot;]</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>select</td>
+	<td>id=Question_Grilling</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SolidFuel</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CookingAreas</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_SystemShutOffs</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Clearance</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WeeklyCleaning</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CookingExhaustFilters</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CookingExhaustFilters</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Parking</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_YearlyCleaning</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Deliveries</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building Details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building Details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Lessor</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.FireExtinguisher</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.FireExtinguisher</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.SmokeDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building.CarbonMonoxideDetectorHardwired</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ConstructionCd</td>
+	<td>label=Modified Fire Resistive</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Building Details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_CONDU_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_CONDU_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Limit1</td>
+	<td>label=$35,000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2600</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_TGLAS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_TGLAS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_GroundFloorSqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_GroundFloorSqFt</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_SecondFloorSqFt</td>
+	<td>1200</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_IGLAS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_IGLAS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_GroundFloorSqFt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_SecondFloorSqFt</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#CopyRisk &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#CopyRisk &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<!--
+<tr>
+	<td>click</td>
+	<td>LOCATOR_DETECTION_FAILED</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ResetScreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.BusinessCategory</td>
+	<td>label=Mercantile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.BusinessClass</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=Building.BusinessClass</td>
+	<td>label=54446 - Candy or Confectionary Stores</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.OccupancyCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Owner-Occupant</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.ConstructionCd</td>
+	<td>label=Frame</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_Deliveries</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Question_Deliveries</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;NO&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ProductManufactured</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Save')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Building.OccupancyCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Building.OccupancyCd</td>
+	<td>label=Lessor</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ACCTS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>29000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_SFCCOV_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FENCE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>15000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EQ_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ORDLAW_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.LossValueUndamagedBuilding</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Coverage.DemIncCostConstruction</td>
+	<td>label=Combined Limit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.CombinedLimit</td>
+	<td>250000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OUTSI_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>16000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_THEFT_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_EffectiveDate</td>
+	<td>01/15/2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLDB_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>13000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit2</td>
+	<td>23000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=Public Utility</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_UTLTE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_WaterSupply</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommunicationSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CommSupplyOverHead</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupply</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PowerSupplyOverHead</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_PAPERS_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Line.GLOccurrenceLimit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Line.GLOccurrenceLimit</td>
+	<td>label=$2,000,000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_ADLRATE_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_Premium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_Premium</td>
+	<td>855</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_AdditionalRatingDesc</td>
+	<td>Evol Deeds</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_DOCON_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_DOCON_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_RetroactiveDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Question_RetroactiveDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Question_ExtReportPeriod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Question_ExtReportPeriod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NamedAssociation</td>
+	<td>Association of Villains</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_UnitOwnerOccupiedPercent</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumberOfDirectors</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_DirectorsSelectedByVoting</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_DoesDeveloperRetainUnits</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_DeveloperSitOnBOD</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_OneEntityOwnMoreThan50</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_BusinessConducted</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PastIncident</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PastLiabilityCancelled</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_HNA_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_HNA_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_LiabilityType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LiabilityType</td>
+	<td>label=Hired and Non-Owned Auto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumEmployees</td>
+	<td>26</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_HiredAutoExposure</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_CareProvided</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_LIQUR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_LIQUR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Limit1</td>
+	<td>label=$1,000,000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_ReceiptsAmt</td>
+	<td>50000</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Alcohol</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_TIPS</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LiquorBoardViol</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LiquorLicenseSusOrRev</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_HappyHour</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_AmusementDevice</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_StageFloor</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_Bar</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LiquorClaim</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_EmpServAlcohol</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_LiquorLiabLapseCov</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_PolicyServAlcohol</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_ShutOffPatrons</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_DocumentIncident</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_BBPRL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_BBPRL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_TanningOperations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_TanningOperations</td>
+	<td>label=Yes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_TanningOperations</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_AnyBodyPiercing</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_AnyTatooing</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumberofBarbers</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumberofBeautician</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_OHEAR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_OHEAR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_NumProfessionals</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumProfessionals</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_VETPL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_VETPL_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_NumVet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_NumVet</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceProfessional</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceZoo</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceSchools</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceLab</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceShelters</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceCommercial</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServiceAuctions</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Question_VetServicePrize</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Wizard_PropertyLine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Wizard_PropertyLine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_APTBOEP_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_APTBOEP_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_CDCKR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_CDCKR_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Question_Desc</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Question_Desc</td>
+	<td>Fiberglass Canoe with paddles and lifejacket</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Limit1</td>
+	<td>18000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_REST_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_REST_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_EMPDH_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_EMPDH_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Limit1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Limit1</td>
+	<td>label=$5,000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Coverage.NumberOfEmployees</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td &gt; #NextPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=CoverageList_FORGA_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CoverageList_FORGA_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Wizard_AdditionalInterests</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Wizard_AdditionalInterests</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AddAdditionalInterest</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=AddAdditionalInterest</td>
+	<td></td>
+</tr>
+<!--Additional Interest 1-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td>label=Additional Insured - Managers Or Lessors Of Premises</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.InterestName</td>
+	<td>DOCTOR OCTAGON</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AIMailingAddr.Addr1</td>
+	<td>123 MAIN </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AIMailingAddr.City</td>
+	<td>MIDDLEBURY</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=AIMailingAddr.StateProvCd</td>
+	<td>label=Vermont</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AIMailingAddr.addrVerifyImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>id=AIMailingAddr.verifyStatusImg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveAndCopy</td>
+	<td></td>
+</tr>
+<!--Additional Interest 2-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td>label=Additional Insured - Designated Person or Organization</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.InterestName</td>
+	<td>DOCTOR DRE</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveAndCopy</td>
+	<td></td>
+</tr>
+<!--Additional Interest 3-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td>label=Additional Insured - Managers Or Lessors Of Premises</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td>label=Additional Insured - Lessor of Leased Equipment</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.LeasedEquipment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.LeasedEquipment</td>
+	<td>STUFF</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.InterestName</td>
+	<td>DOCTOR KAVORKIAN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AI.InterestName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AI.LeasedEquipment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.LeasedEquipment</td>
+	<td>DEVICE 1<br />DEVICE 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=SaveAndCopy</td>
+	<td></td>
+</tr>
+<!--Additional Interest 4-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=AI.InterestTypeCd</td>
+	<td>label=Additional Insured - Vendors</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.YourProduct</td>
+	<td></td>
+</tr>
+<!--
+<tr>
+	<td>type</td>
+	<td>id=AI.YourProduct</td>
+	<td>Chocolate Bunnies</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.YourProduct</td>
+	<td>Chocolate Bunnies<br />Gummy Bears</td>
+</tr>
+-->
+<tr>
+	<td>type</td>
+	<td>id=AI.YourProduct</td>
+	<td>Chocolate Bunnies<br />Gummy Bears<br />Jelly Beans</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_13</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_15</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_16</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<!--
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.InterestName</td>
+	<td>CANDY MAN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AIList_4_Change</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=AIList_4_Change</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=AI.InterestName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=AI.InterestName</td>
+	<td>CANDY MAN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Copy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=NextPage</td>
+	<td></td>
+</tr>
+<!-- Not sure if the user got click happy again -->
+<!-- Cannot click this object after clicking next page -->
+<!--
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=LinkReferenceInclude_17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=LinkReferenceInclude_17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td &gt; #Save</td>
+	<td></td>
+</tr>
+-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=BP-552_AttachForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=BP-552_AttachForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Wizard_Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=Wizard_Review</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1 {
+	color: rgba(0,200,100,.8);
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+	border: 2px solid rgb(255,100,80);
+}
+
+/*width
+color
+style*/
+
+h4 {
+	background: rgb(255,100,80);
+}
+
+body {
+	/*background: url(https://rlv.zcache.com.au/wood_grain_small_square_tile-rb7d5827116424d51bc784120109b210d_agtk1_8byvr_324.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+	background:  pink;
+}
+
+
+
+

@@ -1,0 +1,49 @@
+
+
+/*element**/
+li {
+	border: 2px solid purple;
+}
+
+/*id*/
+#special {
+	background-color: yellow;
+}
+
+/*class*/
+.completed {
+	text-decoration: line-through;
+}
+
+/*most important CSS - there are many of these
+/*star or will apply to the entire page
+*{
+	boarder: 1px solid grey;
+}
+*/
+
+/*decendant tag example could selct all anchors <a> in a li or ul/li*/
+/*  li a {
+    color: red;
+    }
+*/
+/*adjacent tag if you wanted to choose all uls after a h4 for example child*/
+   /* h4 + ul{
+    	color: solid red;
+    }*/
+
+/*attribute tags can select any html element example mutliple links on a page that are the same*/
+  /*	a[https://google.com] {
+  		background: blue;
+  	}*/
+  	/*common with inputs to style text of checkboxes one way
+  	a [input="text"] {
+  		background: red;
+  	}*/
+  	/*nth of type example style the 3rd ul and make purple*/
+  	/* ul:nth-of-type(3) {
+          background: purple;
+  	 }*/
+
+
+
