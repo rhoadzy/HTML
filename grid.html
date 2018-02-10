@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrp Grid system</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+        <style type="text/css">
+        .pink {
+            background: pink;
+            border: 1px solid purple;
+        }
+        .orange {
+            background: orange;
+            border: 1px dashed red;
+            height: 50px;
+        }
+        </style>
+</head>
+<body>
+<!-- ===================== -->
+<!-- Objectives -->
+<!-- 1. understand purpose of grid system -->
+<!-- 2. understand the 4 differnt sizes -->
+<!--       1. xs =phones; small =tables, md destops, lg large destops -->
+<!-- 3. write nested grids -->
+
+<!-- when using bootstrap grid, it needs to be in a container -->
+<div class="contrainer">
+<!-- then in container you need to have a row to have 50/50 split need 6 for 12 1  -->
+<!-- to start these are not responsive - at a break point they all become full 12 units -->
+<!-- make reponseive will add col-md-2 (2 spaces) handles break for destop for each line -->
+ <!-- <div class="row">
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+    <div class="col-lg-1 pink col-md-2">COL LG 1</div>
+ </div> -->
+ <!-- another row 4 equal  parts of 3 units only works on lg breakpoint  1 row 4 parts-->
+ <!-- added col-md-3 to make responsive for med/desktop breakpoint 1 row 4 parts-->
+ <!-- then added col-sm-6 for tablet break point 2 rows 2 parts each -->
+ <!-- dont need the lg or xs will auto adjust the size -->
+  <div class="row">
+    <div class="col-md-3 col-sm-6 pink">
+    <!-- spliting up the first box with another 12 units -->
+      <div class="row">
+          <div class="col-lg-6 orange">Fist Half </div>
+          <div class="col-lg-6 orange">Other Half </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pink">Tour Date!</div>
+    <div class="col-md-3 col-sm-6 pink">Tour Date!</div>
+    <!-- spilit up last colum into 6 equal unit 2 each -->
+    <div class="col-md-3 col-sm-6 pink">
+        <div class="col-lg-2 orange"></div>
+        <div class="col-lg-2 orange"></div>
+        <div class="col-lg-2 orange"></div>
+        <div class="col-lg-2 orange"></div>
+        <div class="col-lg-2 orange"></div>
+        <div class="col-lg-2 orange"></div>
+    </div>
+  </div>
+
+</div>
+    
+</body>
+</html>
