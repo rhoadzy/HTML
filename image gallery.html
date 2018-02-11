@@ -7,11 +7,17 @@
     <title>Image Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        
+        <!-- insert another .css file since it is on bottom of bootstrap cdn, it takes precendence -->
+    <link rel="stylesheet" type="text/css" href="gallery.css">
 
 </head>
 <body>
-<!-- navbar  change navbar-default to navbar-inverse for dark gray background-->
-<nav class="navbar navbar-inverse">
+<!-- navbar  change navbar-default to navbar-inverse for dark gray background-->\
+<!-- navbar changed to fix the top on school navbar-fixed-top -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -22,7 +28,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="#" class="navbar-brand">IMAGES</a>
+            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>IMAGES</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -47,7 +53,9 @@
  <!-- jumbotron containter -->
     <div class="container">
       <div class="jumbotron">
-        <h1>The Image Gallery</h1>
+          <!-- insert retro camera took out used fontawesome code but needed to use fa fa-camera-retro vs fas fa-camera -->
+          
+        <h1><i class="fa fa-camera-retro"></i> The Image Gallery</h1>
         <p> A bunch of cool photos that I did not take</p>
       </div>
 <!-- set up grid section in containter - need 4 units then 2 then 1 -->
@@ -60,46 +68,45 @@
         </div>    
     <div class="col-lg-4 col-sm-6">
         <div class="thumbnail">
-            <img src="http://i.imgur.com/qK42fUu.jpg">
+            <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
         </div>
     </div>
     <div class="col-lg-4 col-sm-6">
         <div class="thumbnail">
-            <img src="http://i.imgur.com/qK42fUu.jpg">
+            <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+    </div>   
+    
+        <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+            </div>
         </div>
     </div>
-     </div>
     <div class="row">
         <div class="col-lg-4 col-sm-6">
             <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
+                <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
             </div>
         </div>
         <div class="col-lg-4 col-sm-6">
             <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
+                <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
             </div>
         </div>
         <div class="col-lg-4 col-sm-6">
             <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg">
+                <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
             </div>
         </div>
     </div>
@@ -113,3 +120,6 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+ 
