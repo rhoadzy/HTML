@@ -1,0 +1,26 @@
+body {
+    background-color: #232323;
+}
+
+/* set up responsive grid with squares */
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%
+}
+
+/* center squares */
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+}
+
+span{
+    color: white;
+}
