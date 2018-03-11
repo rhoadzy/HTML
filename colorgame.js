@@ -37,7 +37,7 @@ function changeColor(color){
         // change each color to give color
     squares[i].style.backgroundColor = color
     
-    }
+    };
 }
 
 function pickColor(){
