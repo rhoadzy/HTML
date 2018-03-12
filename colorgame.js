@@ -7,6 +7,36 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easyButton = document.querySelector("#easyBtn");
+var hardButton = document.querySelector("#hardBtn");
+
+easyButton.addEventListener ("click", function(){
+    hardButton.classList.remove("selected");
+    easyButton.classList.add ("selected");
+    colors =generateRandomColors(3);
+    pickedColor =pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (var i=0; i<squares.length; i++){
+        if(colors[i]){
+            squares[i].style.backgroundColor=colors[i];
+        }else{
+            squares[i].style.display="none"
+        }
+    }
+})
+
+hardButton.addEventListener("click", function () {
+    easyButton.classList.remove("selected");
+    hardButton.classList.add("selected");
+    colors = generateRandomColors(6);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for (var i = 0; i < squares.length; i++) {
+      squares[i].style.backgroundColor = colors[i];
+      squares[i].style.display = "block"
+        }
+    }
+)
 
 resetButton.addEventListener("click",function(){
     // generate new colors
