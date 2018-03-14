@@ -1,5 +1,7 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat","Avenir";
 }
 
 /* set up responsive grid with squares */
@@ -8,17 +10,37 @@ body {
     background: purple;
     padding-bottom: 30%;
     float: left;
-    margin: 1.66%
+    margin: 1.66%;
+    /* change shape of square */
+    border-radius: 15%;
+    /* fade background color */
+    transition: all 0.6s;
+    /* additional transition support for differnt browsers */
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
 }
 
 /* center squares */
 #container {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 600px;
 }
 
 h1 {
+    text-align: center;
     color: white;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    outline: none;
+    
+}
+
+#colorDisplay{
+    font-size: 200%;
 }
 
 
@@ -31,5 +53,30 @@ h1 {
 }
 
 .selected {
-    background-color: blue;
+    color: white;
+    background: steelblue;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    /* fade button color change */
+    transition: all 0.3s;
+}
+/* hover effect */
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+/* space message span create space when message not present */
+#message{
+    display: inline-block;
+    width: 20%;
 }
