@@ -50,7 +50,7 @@ input:focus{
 }
 
 li:nth-child(2n){
-    background: #f7f7f7;
+    background: #f7f7f7; 
 }
 
 body {
